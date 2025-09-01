@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import { KeyIcon, SearchIcon, AlertTriangleIcon, CheckCircleIcon, CpuIcon } from './Icons';
 
@@ -155,7 +154,8 @@ const KeyFinder: React.FC = () => {
                 </div>
             )}
             
-            <style jsx>{`
+            {/* Fix: The `jsx` prop is not a standard attribute for the `<style>` tag in React. It's specific to Next.js's `styled-jsx`. Removing it resolves the TypeScript error. */}
+            <style>{`
               @keyframes fade-in {
                 from { opacity: 0; transform: translateY(10px); }
                 to { opacity: 1; transform: translateY(0); }

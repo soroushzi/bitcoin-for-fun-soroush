@@ -1,7 +1,6 @@
-
 import React from 'react';
 import KeyFinder from './components/KeyFinder';
-import { BitcoinIcon } from './components/Icons';
+import { BitcoinIcon, GithubIcon } from './components/Icons';
 
 const App: React.FC = () => {
   return (
@@ -28,6 +27,18 @@ const App: React.FC = () => {
             <span className="font-bold text-red-500">سلب مسئولیت:</span> این یک شبیه‌سازی است و هیچ کلید خصوصی واقعی را پیدا نمی‌کند. هرگز کلید خصوصی واقعی خود را با کسی به اشتراک نگذارید.
           </p>
           <p className="mt-2">ساخته شده با React، TypeScript و Tailwind CSS</p>
+          <div className="mt-4 flex justify-center items-center">
+            <a 
+              href="https://github.com/soroushzi/bitcoin-for-fun-soroush" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-slate-500 hover:text-slate-300 transition-colors"
+              aria-label="View project on GitHub"
+            >
+              <GithubIcon className="w-4 h-4" />
+              <span>مشاهده پروژه در گیت‌هاب</span>
+            </a>
+          </div>
         </footer>
       </div>
     </div>
